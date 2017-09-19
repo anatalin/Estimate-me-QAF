@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Estimate_me.Tests
+namespace Estimate_me_autotest.Tests
 {
     [TestFixture]
     public class TestClass

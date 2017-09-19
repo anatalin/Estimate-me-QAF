@@ -17,12 +17,19 @@ namespace Estimate_me_autotest.Components.Common
         {
         }
 
-     public T TypeText(string text)
+        public T TypeText(string text)
         {
             (new WebDriverWait(Driver, TimeSpan.FromSeconds(5))).Until(driver => driver.FindElement(By.XPath(RootXPath))).SendKeys(text);
             return Page();
 
         }
+
+        public string Text()
+        {
+            return (new WebDriverWait(Driver, TimeSpan.FromSeconds(5))).Until(driver => driver.FindElement(By.XPath(RootXPath))).Text;
+        }
+
+      
 
         public T Confirm()
         {
